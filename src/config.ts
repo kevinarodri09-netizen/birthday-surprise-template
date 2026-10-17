@@ -1,59 +1,43 @@
-/* ==========================================
-   Birthday Surprise Website Configuration
-
-   Edit this file to customize the website
-   for your loved one!
-   ========================================== */
-
 export const config = {
-  /* Name Verification Gate */
-  recipientName: "love", // required name to enter
-  nameHint: '4 letters, starts with "L"', // hint on wrong name
+  // 1. CONTROL DE ACCESO
+  recipientName: "michelle",         
+  nameHint: "8 letras, empieza con M de mujer magnífica", 
 
-  /* Section Headings */
-  soloGalleryTitle: "✨ My Birthday Girl ✨", // solo gallery title
-  messageTitle: "To My Favorite Person", // letter section title
-  footerText: "Made with 💗 just for you", // footer text
+  // 2. TÍTULOS DE LAS SECCIONES
+  soloGalleryTitle: "✨ Nuestros recuerdos en foto ✨",
+  messageTitle: "My niña única y especial",
+  footerText: "Espero te guste este pequeño detalle",
 
-  /* Button Labels */
+  // 3. TEXTO DE LOS BOTONES
   buttons: {
-    hero: "Ready for a little surprise?", // hero/landing button
-    soloGallery: "Want to see more?", // solo gallery button
+    hero: "Lista para una sorpresita mas?",
+    soloGallery: "Quieres ver mas?",
   },
 
-  /* Together Gallery (Optional) */
-  togetherGallery: {
-    enabled: true, // toggle together gallery
-    title: "💕 Our Memories 💕", // together gallery title
-    buttonText: "One last thing...", // together gallery button
-  },
-
-  /* Birthday Message: Each string is a paragraph */
+  // 4. EL MENSAJE DE CUMPLEAÑOS
   message: [
-    "Happy Birthday, my love!",
+    "Feliz cumpleaños mi Miche!!",
     "",
-    "I hope today is filled with joy, laughter, and all the little moments that make you smile. As you step into this new year, may it bring exciting opportunities, meaningful memories, and the confidence to chase everything you dream of.",
+    "Espero que hoy estés llena de alegría, risas y de todos los pequeños momentos que te hacen sonreír. Al dar el paso hacia este nuevo año, que te traiga oportunidades emocionantes, recuerdos significativos y la confianza para perseguir todo lo que sueñas.",
     "",
-    "You have so much ahead of you, and I hope you never stop believing in yourself and all that you’re capable of. May this year be kind to you, rewarding, and full of reasons to celebrate.",
+    "Tienes mucho por delante, y espero que nunca dejes de creer en ti misma y en todo de lo que eres capaz. Que este año sea amable contigo, gratificante y lleno de motivos para celebrar.",
     "",
-    "Wishing you a beautiful birthday and an even more amazing year to come.",
+    "Te deseo un hermoso cumpleaños y un año aún más increíble por venir.",
     "",
-    "- With love,",
+    "- Con amor, Ariel",
   ],
 
-  /* Theme Colors - Change these to customize the entire website theme! */
   colors: {
-    primary: "#ec4899", // main color (buttons, accents)
-    light: "#fdf2f8", // lightest shade (backgrounds)
-    medium: "#f9a8d4", // medium shade (decorations)
-    dark: "#db2777", // darkest shade (hover states)
+    primary: "#ec4899",
+    light: "#fdf2f8",
+    medium: "#f9a8d4",
+    dark: "#db2777",
   },
 
-  /* Typing Animation Text (shown on the start screen) */
   typingText: {
-    first: "Hey, wait a second!",
-    second: "This website is only for someone special.",
-  },
+    first: "Hey, espera un segundito mas",
+    second: "Este sitio web solo es para alguien que se llama Michelle",
+  }
 };
 
 export type Config = typeof config;
