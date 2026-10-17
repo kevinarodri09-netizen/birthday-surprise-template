@@ -27,11 +27,20 @@ export const config = {
     "- Con amor, Ariel",
   ],
 
+    // ... Asegúrate de que esto quede exactamente así al final del archivo:
+
   colors: {
     primary: "#ec4899",
     light: "#fdf2f8",
     medium: "#f9a8d4",
     dark: "#db2777",
+  },
+
+  // ESTO ES LO QUE FALTABA (Añádelo aquí exactamente):
+  togetherGallery: {
+    enabled: false, // Lo dejamos en "false" para que no te pida obligatoriamente fotos juntos
+    title: "💕 Nuestros Recuerdos 💕",
+    buttonText: "Una última sorpresa...",
   },
 
   typingText: {
@@ -40,4 +49,6 @@ export const config = {
   }
 };
 
+
 export type Config = typeof config;
+
